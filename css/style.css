@@ -6,9 +6,13 @@
   src: url("font/Nexa Slab Bold.otf"), url("font/Nexa Slab Regular.otf");
 }
 
-/* Body */
+/* Body And HTML*/
+html,
 body {
   overflow-x: hidden;
+}
+
+body {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -219,8 +223,6 @@ h6 {
     height: 210px;
     -webkit-transform: rotate(-8deg);
             transform: rotate(-8deg);
-    -webkit-filter: contrast(70%);
-            filter: contrast(70%);
     z-index: 2;
   }
 }
@@ -228,86 +230,73 @@ h6 {
 /* 3 ) Exploring  <<<<<<<<<<<<<<<<< */
 #exploring {
   position: relative;
-  height: 1400px;
   z-index: 1;
+  /* Images */
 }
 
-@media (max-width: 768px) {
-  #exploring {
-    height: 2450px;
-  }
+#exploring .col-height {
+  height: 365px;
 }
 
-#exploring .exploring-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
+#exploring .col-height .im-lg {
   height: 100%;
-}
-
-#exploring .exploring-bg .im-lg {
   position: relative;
-  height: 350px;
+  display: block;
+  overflow: hidden;
 }
 
-#exploring .exploring-bg .im-lg .bg-im {
+#exploring .col-height .im-lg .bg-im {
   height: 100%;
   width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-@media (min-width: 768px) {
-  #exploring .exploring-bg .im-lg {
-    width: 50%;
-    float: left;
-    clear: right;
-  }
-  #exploring .exploring-bg .im-lg:last-of-type {
-    width: 100%;
-  }
-}
-
-#exploring .exploring-bg .im-lg .bg-logo {
+#exploring .col-height .im-lg .bg-logo {
   position: absolute;
   bottom: 1rem;
   width: 120px;
 }
 
-#exploring .exploring-bg .im-lg:nth-of-type(even) .bg-logo {
+#exploring .col-height:nth-of-type(even) .im-lg .bg-logo {
   right: 1rem;
 }
 
-#exploring .exploring-bg .im-lg:nth-of-type(odd) .bg-logo {
+#exploring .col-height:nth-of-type(odd) .im-lg .bg-logo {
   left: 1rem;
 }
 
-#exploring .exploring-bg .im-lg:nth-of-type(2) .bg-logo, #exploring .exploring-bg .im-lg:nth-of-type(4) .bg-logo, #exploring .exploring-bg .im-lg:nth-of-type(5) .bg-logo {
+#exploring .col-height:nth-of-type(2) .im-lg .bg-logo, #exploring .col-height:nth-of-type(4) .im-lg .bg-logo, #exploring .col-height:nth-of-type(5) .im-lg .bg-logo {
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
 
 #exploring .box-ex {
-  position: relative;
-  top: -43px;
+  position: absolute;
+  top: -46px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 2;
 }
 
 @media (max-width: 468px) {
   #exploring .box-ex {
-    top: -23px;
+    top: -20px;
   }
 }
 
 #exploring .box-ex .title-1 {
   letter-spacing: 0.8rem;
-  font-size: 7.4vmin;
+  font-size: 6.5vmin;
 }
 
 #exploring .box-ex .title-2 {
   letter-spacing: 0.4rem;
-  font-size: 4.4vmin;
+  font-size: 3.5vmin;
 }
 
 @media (max-width: 468px) {
@@ -567,6 +556,34 @@ h6 {
 #contact-us .form-control:focus::placeholder {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
+}
+
+#contact-us .form-control.invalid {
+  color: #ca192a;
+  -webkit-transition: 0.2s cubic-bezier(0, 0.68, 0, 0.42);
+  transition: 0.2s cubic-bezier(0, 0.68, 0, 0.42);
+  border-bottom: 2px solid #ca192a;
+}
+
+#contact-us .form-control.invalid::-webkit-input-placeholder {
+  color: #ca192a;
+}
+
+#contact-us .form-control.invalid:-ms-input-placeholder {
+  color: #ca192a;
+}
+
+#contact-us .form-control.invalid::-ms-input-placeholder {
+  color: #ca192a;
+}
+
+#contact-us .form-control.invalid::placeholder {
+  color: #ca192a;
+}
+
+#contact-us .form-control.is-valid {
+  color: #1d8835;
+  border-bottom: 2px solid #1d8835;
 }
 
 #contact-us .btn {
