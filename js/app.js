@@ -307,20 +307,25 @@ $(document).ready(function() {
         // ---- Get Data Comain
         let {
             imgSrcBg: imgBG,
-            companySort: companyST
+            companySort: companyST,
+            companyLN
         } = $(this).data("comain"),
             // ---- Modifing Img Of Main
             main_self = $("#main-top"),
             // ---- Modifing Title Of Main
             title_main = $("#main-top .box .title-1");
         title_main.text(companyST + "boats");
-        console.log(main_self, imgBG.slice(1));
         main_self.css({
             backgroundImage: `url(${imgBG.slice(1)})`
         });
-        /* main_self.css({
-            background: `${imgBG.slice(1)} no-repeat bottom`
-        }); */
+        // Add Link To Main Section 
+        $("#main-top").attr("href", companyLN);
+        // Change Color Of Header OF back is Black
+        /* if (companyST == "cobalt") {
+            $("#main-top .box h6,#main-top .box h1,#main-top .box p").css("color", "#af8f3b");
+        } else {
+            $("#main-top .box h6,#main-top .box h1,#main-top .box p").css("color", "");
+        } */
     });
     //  ? 3 ) Exploring
     /*

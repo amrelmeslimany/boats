@@ -22,27 +22,60 @@
 </head>
 
 <body>
+    <!-- 
+
+        Links to be add on picture click 
+        https://www.cobiaboats.com/
+        https://www.malibuboats.com/
+        https://cobaltboats.com/
+        https://www.maverickboats.com/
+        https://www.pathfinderboats.com/
+        https://www.axiswake.com/
+        https://www.hewes.com/
+
+     -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-1 top-navbar">
         <a class="navbar-brand py-0" href="index.html"><img src="img/cutting-logo.png" alt="logo"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-1" aria-controls="navbar-main-1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div
-            class="collapse navbar-collapse py-1" id="navbar-main-1">
+        <div class="collapse navbar-collapse py-1" id="navbar-main-1">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#" data-sections="#main-top">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" data-sections="#exploring">Explore</a></li>
+                <li class="nav-item dropdown">
+                    <!-- <a class="nav-link" href="#" data-sections="#exploring">Explore</a> -->
+                    <a class="nav-link dropdown-toggle" href="#" id="explore-companinies" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore </a>
+                    <div class="dropdown-menu ex-co-ls" aria-labelledby="explore-companinies">
+                        <a class="dropdown-item" target="_blank" href="https://www.cobiaboats.com/">Cobia Boats</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" target="_blank" href="https://www.malibuboats.com/">Malibu Boats</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" target="_blank" href="https://cobaltboats.com/">Cobalt Boats</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" target="_blank" href="https://www.maverickboats.com/">Maverick Boats</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" target="_blank" href="https://www.pathfinderboats.com/">Pathfinder Boats</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" target="_blank" href="https://www.axiswake.com/">Axis Boats</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" target="_blank" href="https://www.hewes.com/">Hewes Boats</a>
+                    </div>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="#" data-sections="#about-us">about us</a></li>
                 <li class="nav-item"><a class="nav-link" href="#" data-sections="#services">services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#" data-sections="#contact-us">contact us</a></li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-languages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN </a>
-                    <div class="dropdown-menu language-dr-ls" aria-labelledby="dropdown-languages"><a class="dropdown-item" href="#">EN</a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">AR</a></div>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown-languages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN </a>
+                    <div class="dropdown-menu language-dr-ls" aria-labelledby="dropdown-languages">
+                        <a class="dropdown-item" href="#">EN</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">AR</a>
+                    </div>
                 </li>
             </ul>
-            </div>
+        </div>
     </nav>
-    <main id="main-top">
+    <a id="main-top" href="https://www.axiswake.com/" target="_blank">
         <div class="container">
             <div class="box text-center">
                 <h6 class="text-uppercase title-1 mb-1 ">axis boats </h6>
@@ -52,37 +85,45 @@
         </div>
         <div class="container-fluid">
             <ul class="logos-mn-t list-unstyled">
-                <li class="logo-item" data-comain='{"imgSrcBg":"../img/Main/2.jpg","companySort":"cobia"}'><img src="img/Logos/cobia.png" class="logo-img" alt="cobia"><span class="logo-shadow"></span></li>
-                <li class="logo-item" data-comain='{"imgSrcBg":"../img/Main/3.jpg","companySort":"maverick"}'><img src="img/Logos/maverick-logo.png" class="logo-img" alt="maverick"><span class="logo-shadow"></span></li>
-                <li class="logo-item active" data-comain='{"imgSrcBg":"../img/Main/4.jpg","companySort":"axis"}'><img src="img/Logos/Axis-Logo.png" class="logo-img" alt="Axis-Logo"><span class="logo-shadow"></span></li>
-                <li class="logo-item" data-comain='{"imgSrcBg":"../img/Main/1.jpg","companySort":"pathfinder"}'><img src="img/Logos/pathfinder.png" class="logo-img" alt="pathfinder"><span class="logo-shadow"></span></li>
-                <li class="logo-item" data-comain='{"imgSrcBg":"../img/Main/2.jpg","companySort":"malibu"}'><img src="img/Logos/malibu.png" class="logo-img" alt="malibu"><span class="logo-shadow"></span></li>
-                <li class="logo-item" data-comain='{"imgSrcBg":"../img/Main/3.jpg","companySort":"cobalt"}'><img src="img/Logos/Cobalt_Logo.png" class="logo-img" alt="Cobalt"><span class="logo-shadow"></span></li>
-                <li class="logo-item" data-comain='{"imgSrcBg":"../img/Main/4.jpg","companySort":"hewes"}'><img src="img/Logos/hewes.png" class="logo-img" alt="hewes"><span class="logo-shadow"></span></li>
+                <li class="logo-item" data-comain='{"imgSrcBg":"../img/Main/cobia.jpg","companySort":"cobia","companyLN":"https://www.cobiaboats.com/"}'>
+                    <img src="img/Logos/cobia.png" class="logo-img" alt="cobia"><span class="logo-shadow"></span></li>
+                <li class="logo-item" data-comain='{"imgSrcBg":"../img/Main/maverick.jpg","companySort":"maverick","companyLN":"https://www.maverickboats.com/"}'>
+                    <img src="img/Logos/maverick-logo.png" class="logo-img" alt="maverick"><span class="logo-shadow"></span></li>
+                <li class="logo-item active" data-comain='{"imgSrcBg":"../img/Main/axis.jpg","companySort":"axis","companyLN":"https://www.axiswake.com/"}'>
+                    <img src="img/Logos/Axis-Logo.png" class="logo-img" alt="Axis-Logo"><span class="logo-shadow"></span></li>
+                <li class="logo-item" data-comain='{"imgSrcBg":"../img/Main/pathfinder.jpg","companySort":"pathfinder","companyLN":"https://www.pathfinderboats.com/"}'>
+                    <img src="img/Logos/pathfinder.png" class="logo-img" alt="pathfinder"><span class="logo-shadow"></span></li>
+                <li class="logo-item" data-comain='{"imgSrcBg":"../img/Main/malibu.jpg","companySort":"malibu","companyLN":"https://www.malibuboats.com/"}'>
+                    <img src="img/Logos/malibu.png" class="logo-img" alt="malibu"><span class="logo-shadow"></span></li>
+                <li class="logo-item" data-comain='{"imgSrcBg":"../img/Main/cobalt.jpg","companySort":"cobalt","companyLN":"https://cobaltboats.com/"}'>
+                    <img src="img/Logos/Cobalt_Logo.png" class="logo-img" alt="Cobalt"><span class="logo-shadow"></span></li>
+                <li class="logo-item" data-comain='{"imgSrcBg":"../img/Main/hewes.jpg","companySort":"hewes","companyLN":"https://www.hewes.com/"}'>
+                    <img src="img/Logos/hewes.png" class="logo-img" alt="hewes"><span class="logo-shadow"></span></li>
             </ul>
-        </div><img src="img/Explore/right-wave.png" alt="wave" class="right-wave"></main>
+        </div><img src="img/Explore/right-wave.png" alt="wave" class="right-wave">
+    </a>
     <section id="exploring">
         <div class="row no-gutters">
             <div class="col-height col-sm-6">
-                <a href="https://google.com" class="im-lg"><img src="img/Explore/1.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/cobia.png" class="bg-logo" alt="logo"></a>
+                <a target="_blank" href="https://www.cobiaboats.com/" class="im-lg"><img src="img/Explore/1.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/cobia.png" class="bg-logo" alt="logo"></a>
             </div>
             <div class="col-height col-sm-6">
-                <a href="https://google.com" class="im-lg"><img src="img/Explore/2.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/hewes.png" class="bg-logo" alt="logo"></a>
+                <a target="_blank" href="https://www.hewes.com/" class="im-lg"><img src="img/Explore/2.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/hewes.png" class="bg-logo" alt="logo"></a>
             </div>
             <div class="col-height col-sm-6">
-                <a href="https://google.com" class="im-lg"><img src="img/Explore/3.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/malibu.png" class="bg-logo" alt="logo"></a>
+                <a target="_blank" href="https://www.malibuboats.com/" class="im-lg"><img src="img/Explore/3.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/malibu.png" class="bg-logo" alt="logo"></a>
             </div>
             <div class="col-height col-sm-6">
-                <a href="https://google.com" class="im-lg"><img src="img/Explore/4.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/Cobalt_Logo.png" class="bg-logo" alt="logo"></a>
+                <a target="_blank" href="https://cobaltboats.com/" class="im-lg"><img src="img/Explore/4.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/Cobalt_Logo.png" class="bg-logo" alt="logo"></a>
             </div>
             <div class="col-height col-sm-6">
-                <a href="https://google.com" class="im-lg"><img src="img/Explore/5.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/maverick-logo.png" class="bg-logo" alt="logo"></a>
+                <a target="_blank" href="https://www.maverickboats.com/" class="im-lg"><img src="img/Explore/5.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/maverick-logo.png" class="bg-logo" alt="logo"></a>
             </div>
             <div class="col-height col-sm-6">
-                <a href="https://google.com" class="im-lg"><img src="img/Explore/6.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/Axis-Logo.png" class="bg-logo" alt="logo"></a>
+                <a target="_blank" href="https://www.axiswake.com/" class="im-lg"><img src="img/Explore/6.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/Axis-Logo.png" class="bg-logo" alt="logo"></a>
             </div>
             <div class="col-height col-sm-12">
-                <a href="https://google.com" class="im-lg"><img src="img/Explore/7.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/pathfinder.png" class="bg-logo" alt="logo"></a>
+                <a target="_blank" href="https://www.pathfinderboats.com/" class="im-lg"><img src="img/Explore/7.jpg" draggable="false" class="bg-im" alt="boat"><img src="img/Logos/pathfinder.png" class="bg-logo" alt="logo"></a>
             </div>
         </div>
         <div class="container">

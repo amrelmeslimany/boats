@@ -92,9 +92,11 @@ h6 {
 
 /* 2 ) Main       <<<<<<<<<<<<<<<<< */
 #main-top {
-  background: url("../img/Main/1.jpg") no-repeat bottom;
+  background: url("../img/Main/axis.jpg") no-repeat bottom;
+  display: block;
   background-size: cover;
   position: relative;
+  z-index: 1;
   min-height: 750px;
   padding-top: 2.8rem;
   -webkit-transition: 0.2s cubic-bezier(0, 0.68, 0, 0.42);
@@ -138,6 +140,7 @@ h6 {
   position: absolute;
   left: 0;
   bottom: 5rem;
+  z-index: 2;
   width: 100%;
   text-align: center;
   margin-bottom: 0;
